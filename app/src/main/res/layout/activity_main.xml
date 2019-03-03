@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/numbsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+            <EditText
+                android:inputType="number"
+                android:hint="@string/firstnumber"
+                android:id="@+id/firstNumb"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"/>
+
+            <ImageView
+                android:id="@+id/operation"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/question" />
+            <EditText
+                android:inputType="number"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/secondNumb"
+                android:layout_width="100dp"
+                android:hint="@string/secondnumber"
+                android:layout_height="50dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/equal"/>
+            <TextView
+                android:hint="@string/result"
+                android:id="@+id/tvResult"
+                android:layout_width="100dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/round"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/divisionBtn"
+                android:layout_width="52dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="52dp"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/clearBtn"
+                android:background="@drawable/divisioncalc"
+                android:layout_margin="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/minusBtn"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/minusbuttoncalc"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/clearBtn"
+                    android:layout_width="52dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/clearcalc"
+                    android:layout_margin="8dp"/>
+
+                <Button
+                    android:id="@+id/multiplicationBtn"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:background="@drawable/multiplicationcalc"
+                    android:layout_margin="8dp"/>
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/plusBtn"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/plusbuttoncalc"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
