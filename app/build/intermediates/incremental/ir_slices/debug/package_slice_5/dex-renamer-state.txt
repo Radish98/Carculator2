@@ -1,0 +1,4 @@
+#Sun Mar 03 15:04:05 MSK 2019
+base.0=/home/rashid/AndroidProj/Calculator/app/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex
